@@ -85,7 +85,7 @@ void empaquetar_cadena_en_vector(int *p_int_vect, int size_int_vector, char *p_c
         if (((i/2) % 4 == 0) && (i != 0)) {
             ++posicion_vector_int;
         }
-        /*
+        
         unsigned int contador_hasta_4 = ((i/2) % 4) + 1; // Cuenta cuantas veces ha corrido el ciclo, pero cuenta de 1 a 4 y reinicia.
         unsigned int int_temporal = 0;
         if (contador_hasta_4 == 1) {  // Es el primer byte que se empaqueta en la posición posicion_vector_int.
@@ -104,7 +104,7 @@ void empaquetar_cadena_en_vector(int *p_int_vect, int size_int_vector, char *p_c
             int_temporal = byte;
             *(p_int_vect+posicion_vector_int) |= int_temporal;
         }
-        */
+        
         
     }
 
